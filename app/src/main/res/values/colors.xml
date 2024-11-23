@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores de fondo -->
+    <color name="backgroundBarStatus">#1565C0</color>
+    <color name="backgroundApp">#FFFFFFFF</color>
+    <color name="backgroundElements">#CACACA</color>
+    <color name="backgroundTab">#63B4F4</color>
+    <color name="colorPrymaryApp">#2195F1</color>
+    <color name="colorPrymaryDark">#FF000000 </color>
+    <color name="toastBackground">#FF9C9C9C</color>
+    <color name="cardBackground">#80DEEA</color>
+
+    <!-- Colores de textos -->
+    <color name="textTitle">#FFFFFFFF</color>
+    <color name="textPrimary">#FF000000</color>
+    <color name="textSecondary">#414141</color>
+    <color name="textField">#FF616161</color>
+    <color name="textHint">#6F6F6F</color>
+    <color name="textColorError">#FFFF0000</color>
+    <color name="textResultIMC">#FF5F5F5F</color>
+
+    <!-- Colores de interacción -->
+    <color name="colorActive">#7FDCE8</color>
+    <color name="colorInactive">#FF616161</color>
+    <color name="selectedTab">#2195F1</color>
+    <color name="unselectedTab">#8FC8F7</color>
+</resources>

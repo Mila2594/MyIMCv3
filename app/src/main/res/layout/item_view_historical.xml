@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_item_historical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:background="@color/cardBackground">
+
+        <TextView
+            android:id="@+id/tv_date_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:textColor="@color/textSecondary"
+            app:layout_constraintWidth_percent="0.25"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_stateResult"
+            app:layout_constraintBottom_toTopOf="@+id/tv_date_numberday"/>
+
+        <TextView
+            android:id="@+id/tv_date_numberday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            app:layout_constraintWidth_percent="0.25"
+            android:textAlignment="center"
+            android:textColor="@color/textSecondary"
+            android:gravity="center"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_sex"
+            app:layout_constraintTop_toBottomOf="@id/tv_date_month"
+            app:layout_constraintBottom_toTopOf="@id/tv_date_numberYear" />
+
+        <TextView
+            android:id="@+id/tv_date_numberYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent="0.25"
+            android:textAlignment="center"
+            android:textColor="@color/textSecondary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_sex"
+            app:layout_constraintTop_toBottomOf="@id/tv_date_numberday"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_stateResult"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:textAlignment="textStart"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:textColor="@color/textSecondary"
+            app:layout_constraintWidth_percent="0.5"
+            app:layout_constraintStart_toEndOf="@id/tv_date_month"
+            app:layout_constraintEnd_toStartOf="@id/tv_titleIMC"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_sex"/>
+
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textAlignment="viewStart"
+            android:paddingStart="4dp"
+            android:textColor="@color/textSecondary"
+            android:paddingEnd="4dp"
+            app:layout_constraintWidth_percent="0.5"
+            app:layout_constraintStart_toEndOf="@id/tv_date_numberYear"
+            app:layout_constraintEnd_toStartOf="@id/tv_resultIMC"
+            app:layout_constraintTop_toBottomOf="@id/tv_stateResult" />
+
+        <TextView
+            android:id="@+id/tv_weight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/textSecondary"
+            android:textAlignment="viewStart"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:maxLines="1"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintStart_toEndOf="@+id/tv_date_numberday"
+            app:layout_constraintEnd_toStartOf="@+id/tv_height"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sex"
+            app:layout_constraintWidth_percent="0.3" />
+
+        <TextView
+            android:id="@+id/tv_height"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/textSecondary"
+            android:textAlignment="viewStart"
+            android:paddingStart="0dp"
+            android:paddingEnd="4dp"
+            android:maxLines="1"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintStart_toEndOf="@+id/tv_weight"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sex"
+            app:layout_constraintEnd_toStartOf="@+id/tv_resultIMC"
+            app:layout_constraintWidth_percent="0.2"/>
+
+        <TextView
+            android:id="@+id/tv_titleIMC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/title_IMC"
+            android:textAlignment="center"
+            app:layout_constraintWidth_percent="0.25"
+            android:textStyle="bold"
+            android:textColor="@color/textHint"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_resultIMC"
+            app:layout_constraintStart_toEndOf="@id/tv_stateResult"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <TextView
+            android:id="@+id/tv_resultIMC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/textSecondary"
+            android:textAlignment="center"
+            android:maxLines="1"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="20sp"
+            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeStepGranularity="2sp"
+            app:layout_constraintWidth_percent="0.25"
+            app:layout_constraintTop_toBottomOf="@id/tv_titleIMC"
+            app:layout_constraintStart_toEndOf="@id/tv_sex"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

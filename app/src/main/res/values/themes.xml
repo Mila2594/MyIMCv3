@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AppIMCV2" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/backgroundBarStatus</item>
+    </style>
+
+    <style name="Theme.AppIMCV2" parent="Base.Theme.AppIMCV2" />
+</resources>

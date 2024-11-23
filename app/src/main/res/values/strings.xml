@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MyIMCv3</string>
+    <string name="view_main">Índice de masa corporal (IMC) v3</string>
+    <string name="view_historical">Histórico</string>
+    <string name="weight_textView">Peso (Kg)</string>
+    <string name="weightHint_textView">ingresa tu peso (e.g. 55.5)</string>
+    <string name="height_textView">Altura (cm)</string>
+    <string name="heightHint_textView">ingresa tu altura (e.g. 165)</string>
+    <string name="man_radioButton">Hombre</string>
+    <string name="woman_radioButton">Mujer</string>
+    <string name="calculate_button">CALCULAR</string>
+    <string name="imc_result_textView">Resultado IMC</string>
+    <string name="history_buttom">HISTÓRICO</string>
+    <string name="title_IMC">IMC</string>
+    <string name="tv_sinregistros">No hay registros anteriores</string>
+    <string name="weight_placeholder">Peso: %1$.1f kg</string>
+    <string name="height_placeholder">Altura: %1$d </string>
+    <string name="dialog_confirmation">nada</string>
+    <string name="nombre_pestanya">nombre pestaña</string>
+
+</resources>
