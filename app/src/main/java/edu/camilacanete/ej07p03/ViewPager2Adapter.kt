@@ -5,10 +5,12 @@ import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
+//Codigo ejemplo pdf unidad 7
 class ViewPager2Adapter(
     fragmentManager: FragmentManager,
     lifecycle: Lifecycle) :
 FragmentStateAdapter(fragmentManager,lifecycle){
+
     private val mFragmentList = ArrayList<Fragment>()
     private val mFragmentTitleList = ArrayList<String>()
 

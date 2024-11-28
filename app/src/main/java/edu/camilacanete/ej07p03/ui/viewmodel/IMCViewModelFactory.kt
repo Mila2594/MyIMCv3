@@ -4,6 +4,10 @@ import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 
+/*
+   Garantiza que se cree una unica instancia del ViewModel durante el ciclo de vida del componente,
+   pasando el contexto de la aplicacion al ViewModel
+ */
 class IMCViewModelFactory(private val application: Application) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(IMCViewModel::class.java)) {

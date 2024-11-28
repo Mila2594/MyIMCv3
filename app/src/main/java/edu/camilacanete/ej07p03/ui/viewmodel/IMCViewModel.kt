@@ -7,6 +7,10 @@ import androidx.lifecycle.MutableLiveData
 import edu.camilacanete.ej07p03.helper.FileHelper
 import edu.camilacanete.ej07p03.data.model.ImcRecord
 
+/*
+   Clase para el ViewModel de la aplicación, permite centralizar la gestión de los registros IMC
+   Permite que los datos se mantengan separados de la UI, asegurando que sobrevivan a cambios de configuración como rotaciones.
+ */
 class IMCViewModel (application: Application) : AndroidViewModel(application) {
     private val fileHelper: FileHelper = FileHelper(application)
     // Lista mutable de registros IMC

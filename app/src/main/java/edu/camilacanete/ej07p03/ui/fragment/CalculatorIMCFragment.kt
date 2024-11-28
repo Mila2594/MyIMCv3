@@ -22,6 +22,10 @@ import java.util.Locale
 class CalculatorIMCFragment : Fragment() {
 
     private lateinit var binding: FragmentCalculatorImcBinding
+    /*
+      Se instancia el ViewModel usando activityViewModels para compartir datos entre fragmentos
+      El ViewModel es creado utilizando una fábrica personalizada, necesaria cuando se pasa un Application.
+   */
     private val imcViewModel: IMCViewModel by activityViewModels{
         IMCViewModelFactory(requireActivity().application)
     }
@@ -45,8 +49,9 @@ class CalculatorIMCFragment : Fragment() {
         }
     }
 
-    override fun onPause() {
-        super.onPause()
+    // limpiar campos al volver a la vista al volver a la vista
+    override fun onResume() {
+        super.onResume()
         limpiarInterfaz()
     }
 

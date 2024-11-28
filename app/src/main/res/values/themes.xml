@@ -1,7 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.AppIMCV2" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="android:statusBarColor">@color/backgroundBarStatus</item>
+
+        <!-- colores primarios -->
+        <item name="colorPrimary"> @color/colorPrymaryApp</item>  <!-- Color principal de la aplicación -->
+        <item name="colorPrimaryVariant">@color/colorPrymaryDark</item> <!-- Variante del color principal -->
+        <item name="colorOnPrimary">@color/textTitle</item>  <!--Color del texto sobre el fondo primario-->
+
+        <!-- colores secundarios -->
+        <item name="android:textColor">@color/textPrimary</item> <!-- Color del texto secundario -->
+        <item name="android:textColorHighlight">@color/textField</item> <!-- Color del texto hint -->
+
+        <item name="android:statusBarColor">@color/backgroundBarStatus</item> <!-- Color de la barra de estado -->
     </style>
 
     <style name="Theme.AppIMCV2" parent="Base.Theme.AppIMCV2" />

@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="MyCustomAppTheme" parent="Theme.Material3.DayNight.NoActionBar">
-
-        <!-- colores primarios -->
-        <item name="colorPrimary"> @color/colorPrymaryApp</item>  <!-- Color principal de la aplicación -->
-        <item name="colorPrimaryVariant">@color/colorPrymaryDark</item> <!-- Variante del color principal -->
-        <item name="colorOnPrimary">@color/textTitle</item>  <!--Color del texto sobre el fondo primario-->
-
-        <!-- colores secundarios -->
-        <item name="android:textColor">@color/textPrimary</item> <!-- Color del texto secundario -->
-        <item name="android:textColorHighlight">@color/textField</item> <!-- Color del texto hint -->
-
-    </style>
+    <style name="MyCustomAppTheme" parent="Theme.Material3.DayNight.NoActionBar"/>
 
     <style name="CustomFieldTextView">
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/textField</item>
         <item name="android:textStyle">bold</item>
-
     </style>
     
     <style name="CustomToolbarTitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
@@ -62,7 +50,6 @@
         <item name="android:maxLines">1</item>
         <item name="android:ellipsize">none</item>
     </style>
-
 
     <style name="CustomTextViewStateIMC">
         <item name="android:textColor">@color/textResultIMC</item>
